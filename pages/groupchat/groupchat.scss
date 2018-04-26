@@ -1,0 +1,88 @@
+page-groupchat {
+   
+
+    .chat {
+        width: 320px;
+    }
+    
+    .bubble{
+        background-color: #38c2f0;//#01b9f5
+        border-radius: 5px;
+        box-shadow: 0 0 6px rgb(243, 44, 44);
+        display: inline-block;
+        padding: 10px 18px;
+        position: relative;
+        vertical-align: top;
+    }
+    .bubbleuser{
+        background-color: #b8e5f1;
+        border-radius: 15px;
+        box-shadow: 0 0 6px rgb(3, 183, 255);// rgb(201, 196, 196);
+        display: inline-block;
+        padding: 6px 18px;
+        position: relative;
+        vertical-align: top;
+    }
+    .bubblefriend{
+        background-color: #eaf5f1;//#b8e5f1;//#01b9f5
+        border-radius: 15px;
+        box-shadow: 0 0 6px rgb(201, 196, 196);
+        display: inline-block;
+        padding: 5px 18px;
+        position: relative;
+        vertical-align: top;
+    }
+    
+    .bubbleuser::before {
+        background-color:#b8e5f1;// #F2F2F2;
+        content: "\00a0";
+        display: block;
+        height: 16px;
+        position: absolute;
+        top: 11px;
+        transform:             rotate( 29deg ) skew( -35deg );
+            -moz-transform:    rotate( 29deg ) skew( -35deg );
+            -ms-transform:     rotate( 29deg ) skew( -35deg );
+            -o-transform:      rotate( 29deg ) skew( -35deg );
+            -webkit-transform: rotate( 29deg ) skew( -35deg );
+        width:  20px;
+    }
+    .bubblefriend::before {
+        background-color:#eaf5f1;//#59c9ee;// #F2F2F2;
+        content: "\00a0";
+        display: block;
+        height: 16px;
+        position: absolute;
+        top: 11px;
+        transform:             rotate( 29deg ) skew( -35deg );
+            -moz-transform:    rotate( 29deg ) skew( -35deg );
+            -ms-transform:     rotate( 29deg ) skew( -35deg );
+            -o-transform:      rotate( 29deg ) skew( -35deg );
+            -webkit-transform: rotate( 29deg ) skew( -35deg );
+        width:  20px;
+    }
+    
+    .me {
+        float: left;   
+        margin: 5px 45px 5px 20px;         
+    }
+    
+    .me::before {
+        box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+        left: -9px;           
+    }
+    
+    .you {
+        float: right;    
+        margin: 5px 20px 5px 45px;         
+    }
+    
+    .you::before {
+        box-shadow: 2px -2px 2px 0 rgba(69, 151, 206, 0.4);
+        right: -9px;    
+    }
+    
+    .chatwindow {
+        padding-bottom: 70px;
+    }
+    }

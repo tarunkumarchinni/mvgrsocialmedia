@@ -1,0 +1,35 @@
+<!--
+  Generated template for the Loginfail page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+ 
+
+</ion-header>
+
+
+<ion-content padding>
+  <div padding [@flyInBottomFast]="cloudState" id="cloud-layer">
+ 
+    <ion-row>
+      <ion-col>
+        <img [@flyInBottomSlow]="logoState" src="assets/imgs/mvgr1.gif" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list inset [@bounceInBottom]="formState">
+ 
+             <ion-item>
+               <h2 color="blue">Oops!.. Something went wrong check your credentials once</h2>
+               
+              </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </div>
+ 
+</ion-content>

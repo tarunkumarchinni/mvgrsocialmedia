@@ -1,0 +1,60 @@
+
+<ion-header>
+
+  <ion-navbar color="hcolor">
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>MVGR Social Media</ion-title> 
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+      <ion-card *ngFor = "let item of allposts; let i = index">
+
+        <ion-item  color="blue">
+          <ion-avatar item-start>
+            <img src="{{item.profileURL}}">
+          </ion-avatar>
+          <h2>{{item.displayName}}</h2>
+          <p><small>{{item.timestamp}}</small></p>
+        </ion-item>
+        <ion-card-content>
+            
+            <p>{{item.posttitle}}</p>
+          </ion-card-content>
+        <h3 *ngIf="!imgornot[i]"></h3>
+            <img src="{{item.photoURL}}" *ngIf="imgornot[i]">
+     
+        
+      
+        <ion-card-content>
+          
+          <p>{{item.postmessage}}</p>
+        </ion-card-content>
+      
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="thumbs-up" (click)="getlike()"></ion-icon>
+              <div >{{this.like}} Likes</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="md-thumbs-down" (click)="getdislike()"></ion-icon>
+              <div>{{this.dislike}} dislikes</div>
+            </button>
+          </ion-col>
+         
+        </ion-row>
+      
+      </ion-card>
+      
+      
+
+
+</ion-content>

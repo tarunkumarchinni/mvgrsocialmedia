@@ -1,0 +1,102 @@
+<!--
+  Generated template for the Newsfeed page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="hcolor">
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>newsfeed</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+  <div>
+          <ion-item >
+                <ion-input type="text" value="" placeholder="Title of Post" [(ngModel)]="newpost.posttitle"></ion-input>
+              </ion-item> 
+              <div class="spacer" style="height: 10px;"></div>
+              <div class="spacer" style="height: 10px;"></div>
+            <ion-item>
+                <ion-textarea value="" placeholder="Post Message" [(ngModel)]="newpost.postmessage"></ion-textarea>
+              
+           </ion-item>
+           
+                <div class="spacer" style="height: 10px;"></div>
+                <div class="spacer" style="height: 10px;"></div>
+         <div class="signup-button">       
+          <button ion-button round outline end> <ion-icon name="camera" (click)="choosepicture()" item-right></ion-icon></button>
+          
+           <button ion-button round outline (click)="postcomment()" item-right>Post</button>
+         </div>
+           <div class="spacer" style="height: 10px;"></div>
+           <div class="spacer" style="height: 10px;"></div>
+        </div>
+          <img src="{{imgurl}}">
+          
+        <div>
+           <!--<div [hidden]="!moveon">
+                <button ion-button round outline (click)="proceed()">Skip this step</button>
+              </div>
+              <div [hidden]="moveon">
+                <button ion-button round outline (click)="updateproceed()">Upload & proceed</button>
+              </div>-->
+      
+  </div>
+<!--  <div>
+      <ion-list>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="img/avatar-finn.png">
+            </ion-avatar>
+            <h2>Finn</h2>
+            <h3>Don't Know What To Do!</h3>
+            <p>I've had a pretty messed up day. If we just...</p>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="img/avatar-finn.png">
+              </ion-avatar>
+              <h2>Finn</h2>
+              <h3>Don't Know What To Do!</h3>
+              <p>I've had a pretty messed up day. If we just...</p>
+            </ion-item>
+          </ion-list>
+  </div>
+<div>
+    <ion-card>
+        <img src="img/logo.png"/>
+        <ion-card-content>
+          <ion-card-title>
+            Nine Inch Nails Live
+            </ion-card-title>
+          <p>
+            The most popular industrial group ever, and largely
+            responsible for bringing the music to a mass audience.
+          </p>
+        </ion-card-content>
+      </ion-card><ion-card>
+          <img src="img/nin-live.png"/>
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+              </ion-card-title>
+            <p>
+              The most popular industrial group ever, and largely
+              responsible for bringing the music to a mass audience.
+            </p>
+          </ion-card-content>
+        </ion-card>
+</div>
+
+-->
+</ion-content>
